@@ -1,0 +1,26 @@
+/* .zoomable {
+    width: 200px;
+    transition: transform 0.3s;
+}
+.zoomable:hover {
+    transform: scale(1.5);
+} */
+
+/* slideshow style */
+
+.carousel {
+    height: 100vh; 
+    width: 100vw;
+} 
+
+.carousel-item video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.carousel-item .text-center h2 {
+    color: #333;
+}
+.carousel-item .text-center p {
+    color: #666;
+}
