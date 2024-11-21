@@ -5,27 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ballet Website</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
 </head>
 <body>
     <header>
         <h1>Ballet World</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="slideshow.html">Slideshow</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+      
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
 
-    <main>
-        <section>
-            <h2>Welcome to the World of Ballet</h2>
-            <p>Discover the elegance, history, and artistry of ballet.</p>
-        </section>
-    </main>
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="slideshow.html">SlideShow</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="mid.html">Mid</a>
+                  </li>
+
+                
+              </ul>
+            </div>
+          </nav>
+        </header>
+
+<main>
+
+          <div class="container mt-4">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card">
+                  <img class="card-img-top" src="images/palestra.jpg" alt="Imagem da palestra">
+                  <div class="card-body">
+                    <h3>PALESTRAS</h3>
+                    <p class="card-text">Ana Botafogo apresenta palestras presencialmente e on-line para alunos ou fãs interessados na sua história e sabedoria!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card">
+                  <img class="card-img-top" src="images/workshops.jpeg" alt="Imagem do workshop">
+                  <div class="card-body">
+                    <h3>WORKSHOPS</h3>
+                    <p class="card-text">Ana Botafogo oferece workshops para bailarinos e amantes da dança, abordando técnicas e experiências do balé clássico.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </main>
+        </body>
+        </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <script src="main.js"></script>
+    
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+          <p class="mb-0">&copy; 2024 - Mundo ballet. Todos os direitos reservados.</p>
+          <p class="mb-0">Feito com ❤️ e Bootstrap.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>

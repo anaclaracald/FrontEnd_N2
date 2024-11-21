@@ -1,0 +1,22 @@
+.form-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;      /* Garante que preencha o container */
+    padding: 15px;    /* Adiciona margem interna */
+    border-radius: 8px; 
+}
+
+.btn {
+    justify-content: center;
+}
+
+.is-invalid {
+    border-color: #dc3545;
+}
+
+.is-valid {
+    border-color: #28a745;
+}
+  

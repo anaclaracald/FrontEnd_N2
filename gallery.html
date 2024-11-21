@@ -1,29 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ballet Gallery</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Galeria de Fotos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styleGallery.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="slideshow.html">Slideshow</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="slideshow.html">SlideShow</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+
+              <li class="nav-item">
+                <a class="nav-link" href="mid.html">Mid</a>
+              </li>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
     </header>
 
-    <section class="gallery">
-        <img src="images/ballet1.jpg" class="zoomable" alt="Ballet Image 1">
-        <img src="images/ballet2.jpg" class="zoomable" alt="Ballet Image 2">
-        <img src="images/ballet3.jpg" class="zoomable" alt="Ballet Image 3">
-    </section>
+    <div class="container mt-4">
+        <h1 class="text-center mb-4">Galeria de Fotos</h1>
+        <div class="row gallery">
+            <!-- Imagens da galeria -->
+            <div class="col-sm-6 col-md-4 mb-4">
+                <img src="/assets/images/ana3.jpg" class="img-fluid zoomable" alt="Ballet Image 1" data-bs-toggle="modal" data-bs-target="#imageModal">
+            </div>
+            <div class="col-sm-6 col-md-4 mb-4">
+                <img src="/assets/images/ana4.jpg" class="img-fluid zoomable" alt="Ballet Image 2" data-bs-toggle="modal" data-bs-target="#imageModal">
+            </div>
+            <div class="col-sm-6 col-md-4 mb-4">
+                <img src="/assets/images/ana1.jpg" class="img-fluid zoomable" alt="Ballet Image 3" data-bs-toggle="modal" data-bs-target="#imageModal">
+            </div>
+        </div>
+    </div>
 
-    <script src="main.js"></script>
+    <!-- Modal para visualização -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">Imagem</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img id="modalImage" src="" alt="Imagem Ampliada" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+          <p class="mb-0">&copy; 2024 - Mundo ballet. Todos os direitos reservados.</p>
+          <p class="mb-0">Feito com ❤️ e Bootstrap.</p>
+        </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/gallery.js"></script>
 </body>
 </html>

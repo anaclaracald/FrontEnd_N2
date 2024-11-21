@@ -4,50 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ballet Slideshow</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/styleSlideShow.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <h1>Ballet World</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="slideshow.html">SlideShow</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="mid.html">Mid</a>
+                  </li>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+    </header>
+    <!-- Introdução -->
+    <div class="slideshow-intro text-center py-4">
+        <h1>A história nos palcos de Ana Botafogo</h1>
+        <p class="lead">Uma viagem pela elegância, movimento e arte.</p>
+    </div>
+
+    <!-- Carrossel -->
     <div id="balletCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
+            <button type="button" data-bs-target="#balletCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#balletCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#balletCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#balletCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
         <div class="carousel-inner">
+            <!-- Slide 1: Imagem -->
             <div class="carousel-item active">
-                <div class="d-flex justify-content-center align-items-center" style="height: 500px; background-color: #f8f9fa;">
-                    <div class="text-center">
-                        <h2 class="display-4">The Beauty of Ballet</h2>
-                        <p class="lead">Explore the elegance and art of ballet, from classical to modern performances.</p>
-                    </div>
-                </div>
+                <img src="/assets/images/ana1.jpg" class="d-block w-100 h-100" alt="Ballet Slide 1">
             </div>
+            <!-- Slide 2: Vídeo (Iframe) -->
             <div class="carousel-item">
-                <div class="d-flex justify-content-center align-items-center" style=" background-color: #000;">
-                    <video class="w-75" controls>
-                        <source src="/assets/videos/ballet-perfomance.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
+                <iframe  class="w-100 h-100"
+                    src="https://youtu.be/QWWVejAxLcw"
+                    title="Vídeo Ballet 1" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
             </div>
+            <!-- Slide 3: Imagem -->
             <div class="carousel-item">
-                <div class="d-flex justify-content-center align-items-center" style=" background-color: #e9ecef;">
-                    <div class="text-center">
-                        <h2 class="display-4">Famous Ballet Dancers</h2>
-                        <p class="lead">Learn about the iconic dancers who have shaped the world of ballet.</p>
-                    </div>
-                </div>
+                <img src="/assets/images/ana2.jpg" class="d-block w-100 h-100" alt="Ballet Slide 2">
             </div>
+            <!-- Slide 4: Vídeo (Iframe) -->
             <div class="carousel-item">
-                <div class="d-flex justify-content-center align-items-center" style=" background-color: #333;">
-                    <video class="w-75" controls>
-                        <source src="/assets/videos/ballet-perfomance2.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
+                <iframe class="w-100 h-100"
+                    src="https://www.youtube.com/watch?v=QWWVejAxLcw" 
+                    title="Vídeo Ballet 2" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
             </div>
         </div>
+        <!-- Controles do Carrossel -->
         <button class="carousel-control-prev" type="button" data-bs-target="#balletCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -58,9 +97,34 @@
         </button>
     </div>
 
+    <!-- Cards Informativos -->
+    <div class="info-boxes container my-5">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="info-box p-4 border rounded shadow-sm">
+                    <h3>Apresentação Ana Botafogo com repertório Giselle</h3>
+                    <p>Ana Botafogo, em 1984, se apresentava no Teatro Municipal do Rio de Janeiro. Com uma apresentação extraordinária com repertório de Giselle. Como seu companheiro de dança se tem Fernando Bujones.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="info-box p-4 border rounded shadow-sm">
+                    <h3>Apresentação Ana Botafogo com repertório Dom Quixote</h3>
+                    <p>Pas-de-deux de Dom Quixote, com Ana Botafogo e Marcelo Misailidis, na Gala a Eugenia Feodorova. Música de Minkus e coreografia de Petipa/Gorsky.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+          <p class="mb-0">&copy; 2024 - Mundo ballet. Todos os direitos reservados.</p>
+          <p class="mb-0">Feito com ❤️ e Bootstrap.</p>
+        </div>
+      </footer>
+
+    <!-- Scripts do Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-    
-    <script src="main.js"></script>
 </body>
 </html>
+
