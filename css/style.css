@@ -1,130 +1,40 @@
-/* .zoomable {
-    width: 200px;
-    transition: transform 0.3s;
-}
-.zoomable:hover {
-    transform: scale(1.5);
-} */
-
-/* slideshow style */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300&display=swap');
 
 body {
-    margin: 0px;
-    padding: 0px;
-    background-color: #f7dde1;
-    height: 100vh;
-    width: 100vw;
-}
-.carousel {
-    height: 100vh; 
-    width: 100vw;
-} 
-
-.carousel-item video {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-.carousel-item .text-center h2 {
-    color: #333;
-}
-.carousel-item .text-center p {
-    color: #666;
-}
-
-/* Estilo básico */
-body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: normal;
     margin: 0;
     padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-html, body {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .title {
-    text-align: center;
-  }
-h1 {
-    margin: 0;
-    text-align: center;
-
+    flex-direction: column;
+    min-height: 100vh; 
 }
 
-.menu-toggle {
-    font-size: 24px;
-    cursor: pointer;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 1000;
-}
-/* Navegação */
-.navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: none; /* Oculto por padrão */
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    background-color: #eea8b4;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+.navbar {
+    background:#ecebeb;
+    padding: 10px;
 }
 
-.navbar ul li {
-    text-align: center;
-    border-bottom: 1px solid #555;
+.site-name {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #7a7a7a;
 }
 
-.navbar ul li:last-child {
-    border-bottom: none;
+.navbar-nav .nav-link {
+    font-weight: 400;
+    color: black;
+    transition: color 0.3s ease;
 }
 
-.navbar ul li a {
-    color: rgb(224, 153, 153);
-    text-decoration: none;
-    display: block;
-    padding: 10px 20px;
-    transition: background 0.3s ease;
+.navbar-nav .nav-link:hover {
+    color: #3f9194;
+    font-weight: 500;
 }
 
-.navbar ul li a:hover {
-    background-color: rgb(219, 127, 181);
-}
-
-/* Menu visível */
-.navbar.active ul {
-    display: block;
-}
-
-
-/* Responsividade */
-@media (min-width: 768px) {
-    .menu-toggle {
-        display: none;
-    }
-    .navbar ul {
-        display: flex;
-        position: static;
-        background-color: rgb(241, 171, 171);
-        box-shadow: none;
-    }
-    .navbar ul li {
-        border-bottom: none;
-    }
+.footer {
+    padding: 2rem 0;
+    margin-top: auto; 
 }

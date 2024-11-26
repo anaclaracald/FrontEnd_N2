@@ -1,0 +1,50 @@
+body {
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  header, footer {
+    background-color: #343a40; /* Fundo escuro para header e footer */
+    color: white;
+  }
+  
+  header h1, footer p {
+    margin: 0;
+    font-family: Georgia, serif;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-title {
+    font-family: Georgia, serif;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    color: rgba(0, 0, 0, 0.75);
+    line-height: 1.8;
+    text-align: justify;
+    text-indent: 20px
+  }
+  
+  iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 6px;
+  }
+  
+  h1 {
+      text-align: justify;
+      margin-left: 80px;
+      margin-right: 80px;
+  }

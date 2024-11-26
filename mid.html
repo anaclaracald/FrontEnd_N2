@@ -3,47 +3,120 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
-  <link rel="stylesheet" href="styleMid.css">
+  <title>Cards em Duas Linhas</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/styleCuriosidades.css">
+  <link rel="shortcut icon" href="/assets/ballet-shoes.png" type="image/x-icon">
 </head>
 
 <body>
-  <div class="container">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="/assets/images/logo.png" alt="Logo Ballet World" width="150" height="50" class="me-2">
+            </a>
 
-    <div class="card2">
-      <h1>ANA <br> BOTAFOGO </h1>
-      <p>Ana Botafogo é uma das mais renomadas bailarinas brasileiras, conhecida por sua habilidade técnica excepcional e por ser uma das principais figuras da dança clássica no Brasil.</p>
-    </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <div class="card">
-      <h3>SONHOS e INSPIRAÇÕES</h3>
-      <p>Ana sonhou em ser uma grande bailarina desde jovem, buscando levar a dança clássica ao público brasileiro e mundial.</p>
-      <p>Ela se inspirou em grandes bailarinas internacionais, como Maya Plisetskaya e Suzanne Farrell, além de se motivar pela perfeição técnica e expressão artística.</p>
-    </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/slideShow2.html">SlideShow</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Galeria</a>
+                    </li>
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="contact.html">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mid.html">Curiosidades</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
 
-    <div class="card">
-      <h3>JORNADA</h3>
-      <p>Sua jornada começou no Rio de Janeiro, onde ingressou na Escola de Dança do Teatro Municipal e se tornou prima ballerina.</p> 
-      <p>Destacou-se em apresentações nacionais e internacionais, tornando-se uma referência na dança clássica.</p>
-    </div>
+  <main class="container my-5">
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">ANA BOTAFOGO</h5>
+            <p class="card-text">Ana Botafogo é uma das mais renomadas bailarinas brasileiras, conhecida por sua habilidade técnica excepcional e por ser uma das principais figuras da dança clássica no Brasil.</p>
+          </div>
+        </div>
+      </div>
 
-    <div class="card3">
-      <iframe 
-      src="https://www.youtube.com/embed/shcbe9CAwAk?autoplay=1&controls=1&mute=0&loop=1" 
-      frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen>
-    </iframe>
-    </div>
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">SONHOS e INSPIRAÇÕES</h5>
+            <p class="card-text">Ana sonhou em ser uma grande bailarina desde jovem, buscando levar a dança clássica ao público brasileiro e mundial. Inspirou-se em Maya Plisetskaya e Suzanne Farrell.</p>
+          </div>
+        </div>
+      </div>
 
-    <div class="card">
-      <h3>CONQUISTAS</h3>
-      <p> Entre suas conquistas, estão sua atuação no Teatro Municipal do Rio de Janeiro, participações em festivais internacionais, e prêmios por sua contribuição à dança. Também formou e capacitou novas gerações de bailarinos.</p>
-    </div>
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">JORNADA</h5>
+            <p class="card-text">Sua jornada começou no Rio de Janeiro, onde ingressou na Escola de Dança do Teatro Municipal e se tornou prima ballerina, destacando-se nacional e internacionalmente.</p>
+          </div>
+        </div>
+      </div>
 
-    <div class="card">
-      <h3>LEGADO</h3>
-      <p> Com mais de 40 anos de carreira, Ana Botafogo deixou um legado de perseverança, disciplina e paixão pela dança, tornando-se uma das figuras mais influentes da cena de balé brasileira.</p>
+      <!-- Card 4 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <iframe 
+            src="https://www.youtube.com/embed/shcbe9CAwAk?autoplay=0&controls=1&mute=0&loop=1" 
+            frameborder="0" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">CONQUISTAS</h5>
+            <p class="card-text">Ana brilhou no Teatro Municipal do Rio de Janeiro, participou de festivais internacionais e recebeu prêmios por sua contribuição à dança. Ela capacitou novas gerações.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">LEGADO</h5>
+            <p class="card-text">Com mais de 40 anos de carreira, Ana Botafogo deixou um legado de perseverança, disciplina e paixão pela dança, tornando-se uma das figuras mais influentes do balé brasileiro.</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>  
+  </main>
+
+  <footer class="footer text-black  text-center py-10 mt-auto">
+    <div class="container">
+        <p class="mb-0">&copy; 2024 - Ballet world. Todos os direitos reservados.</p>
+        <p class="mb-0">Feito com ❤️ e Bootstrap.</p>
+    </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+</html>

@@ -1,15 +1,23 @@
+@import url('/css/style.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: normal;}
+
 .form-container {
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;      /* Garante que preencha o container */
-    padding: 15px;    /* Adiciona margem interna */
+    width: 100%;    
+    padding: 15px;  
     border-radius: 8px; 
 }
 
-.btn {
-    justify-content: center;
+.btn:hover {
+    background-color: #0056b3; 
 }
 
 .is-invalid {
@@ -20,3 +28,13 @@
     border-color: #28a745;
 }
   
+.btn {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    transition: background-color 0.3s; 
+}
+
+footer{
+    background-color: #91919133;
+}

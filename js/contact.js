@@ -1,13 +1,13 @@
 document.getElementById("contactForm").addEventListener("submit", function (event) {
-    event.preventDefault(); // Impede o envio do formulário para validação
+    event.preventDefault(); 
 
-    // Obtendo os campos
     const nameInput = document.getElementById("name");
     const emailInput = document.getElementById("email");
     const termsCheckbox = document.getElementById("terms");
+    const messageInput = document.getElementById("message"); 
     const submitButton = document.getElementById("submitButton");
 
-    let isValid = true; // Controle para checar todos os campos
+    let isValid = true;
 
     // Validação do nome
     if (nameInput.value.trim() === "") {
@@ -36,38 +36,31 @@ document.getElementById("contactForm").addEventListener("submit", function (even
         termsCheckbox.classList.add("is-valid");
     }
 
-    // Se todos os campos forem válidos
+    // O campo de mensagem é opcional, sem validação necessária
+    if (messageInput.value.trim() !== "") {
+        messageInput.classList.add("is-valid");
+    } else {
+        messageInput.classList.remove("is-valid");
+    }
+
+    // Se tudo for válido
     if (isValid) {
-        // Desabilita o botão e exibe o spinner
         submitButton.disabled = true;
         submitButton.innerHTML = `<span class="spinner-border spinner-border-sm"></span> Enviando...`;
 
-        // Simula o envio do formulário
         setTimeout(function () {
-            // Habilita o botão novamente e mostra a mensagem de sucesso
             submitButton.disabled = false;
             submitButton.innerHTML = "Enviar";
             document.getElementById("successMessage").style.display = "block";
 
-            // Limpa os campos e remove classes de validação
+            // Limpa os campos
             nameInput.value = "";
             emailInput.value = "";
+            messageInput.value = ""; 
             termsCheckbox.checked = false;
 
+            // Remove classes de validação
             document.querySelectorAll(".is-valid").forEach((input) => input.classList.remove("is-valid"));
-        }, 2000); // Simula o tempo de envio (2 segundos)
+        }, 2000);
     }
-});
-
-// Validação em tempo real nos campos
-document.querySelectorAll("input").forEach((input) => {
-    input.addEventListener("blur", function () {
-        if (this.checkValidity()) {
-            this.classList.remove("is-invalid");
-            this.classList.add("is-valid");
-        } else {
-            this.classList.remove("is-valid");
-            this.classList.add("is-invalid");
-        }
-    });
 });
