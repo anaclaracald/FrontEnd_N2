@@ -27,3 +27,22 @@ textarea.form-control {
 footer{
     background-color: #91919133;
 }
+
+.video-iframe-container {
+    position: relative;
+    overflow: hidden; /* Garante que o aumento de escala não ultrapasse o contêiner */
+    border-radius: 8px; /* Opcional: bordas arredondadas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-iframe-container:hover {
+    transform: scale(1.05); /* Aumenta o tamanho levemente */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+}
+
+.video-iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Mantém proporção de vídeo */
+    border: none;
+    display: block; /* Remove espaços indesejados */
+}
