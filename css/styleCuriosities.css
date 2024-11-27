@@ -31,7 +31,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    height: 35vh;
+    height: 32vh;  /*adaptado para telas menores */
     display: flex;
     flex-direction: column;
   }
@@ -65,7 +65,7 @@ body {
     margin-left: 32px;
     margin-right: 32px;
     text-indent: 20px;
-    line-height: 2;
+    line-height: 1.13;  /*adaptado para telas menores */
     word-spacing: 2px;
   }
   
