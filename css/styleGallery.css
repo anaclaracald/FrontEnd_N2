@@ -46,3 +46,12 @@ footer{
     border: none;
     display: block; /* Remove espaços indesejados */
 }
+#modalImage {
+    transition: transform 0.3s ease;
+    cursor: zoom-in;
+}
+
+#modalImage.zoomed {
+    transform: scale(2); /* Ajuste o valor para o nível de zoom desejado */
+    cursor: zoom-out;
+}

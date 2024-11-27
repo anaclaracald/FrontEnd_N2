@@ -18,7 +18,17 @@ galleryImages.forEach((image) => {
     });
 });
 
-// Remove o src da imagem ao fechar o modal
+// Remove o src da imagem e o zoom ao fechar o modal
 modal.addEventListener('hidden.bs.modal', () => {
     modalImage.src = ''; // Evita carregamento desnecessário
+    modalImage.classList.remove('zoomed'); // Remove zoom quando o modal fecha
+});
+
+// Adiciona funcionalidade de zoom
+modalImage.addEventListener('click', () => {
+    if (modalImage.classList.contains('zoomed')) {
+        modalImage.classList.remove('zoomed'); // Remove o zoom
+    } else {
+        modalImage.classList.add('zoomed'); // Adiciona o zoom
+    }
 });
